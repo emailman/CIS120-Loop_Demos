@@ -19,9 +19,9 @@ window = App(title="Sum a Series", width=300, height=250, layout="grid")
 
 Text(window, text="     ", grid=[0, 0])  # spacer
 
-Text(window, text="Series: ", grid=[1, 1])
+Text(window, text="Series:", grid=[1, 1], align="right")
 Text(window, text="1/2 + 1/3 + 1/4 + ... + 1/n",
-     grid=[1, 2])
+     grid=[1, 2], align="left")
 
 Text(window, grid=[2, 0])  # spacer
 
