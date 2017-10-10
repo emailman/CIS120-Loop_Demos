@@ -24,15 +24,16 @@ def calc():
 
         else:
             txtSum.set("")
-            error(title="Data Entry Error",
+            warn(title="Data Entry Error",
                   text="First number must be less than last number")
     else:
         txtSum.set("")
         error(title="Data Entry Error",
               text="Missing or non-integer data found")
 
+
 window = App(title="Sum of Integers", layout="grid",
-             height=250, width=200)
+             height=250, width=280)
 
 Text(window, text="    ", grid=[0, 0])  # Spacer
 

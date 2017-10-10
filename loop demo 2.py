@@ -2,12 +2,13 @@ from guizero import *
 
 
 def calc_sum():
-    total = 0
     num = tbxNum.get()
     if num.isdigit():
         if int(num) >= 2:
+            total = 0
             for each in range(2, int(num) + 1):
                 total += 1 / each
+
             txtSum.set(total)
         else:
             error(title="Data Entry Error", text="'n' must be >= 2")
