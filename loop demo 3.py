@@ -9,7 +9,7 @@ for each in phrase1:
 
 print("found", count_t, "t's\n")
 
-phrase2 = "We found   a   way to bale the hay."
+phrase2 = "We found a way to bale the hay."
 
 words = phrase2.split()
 
